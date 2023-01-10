@@ -9,19 +9,30 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import ContactMe from './Components/ContactMe';
 import Footer from './Components/Footer';
+import GitStats from './Components/GitStats';
+
 
 function App() {
   return (
     <div className="App">
       <Navbar/>
       <About/>
+      <br />
       <AboutMe/>
+      <br />
       <TechStack/>
+      <br />
+      <br />
       {/* <Tech2/> */}
       {/* <Projects/> */}
-      <Skills/>
+      {/* <Skills/> */}
       <Projects/>
+      <br />
+      <br />
+      <GitStats/>
+      <br />
       <ContactMe/>
+      {/* <br /> */}
       <Footer/>
     </div>
   );

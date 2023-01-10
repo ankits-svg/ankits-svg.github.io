@@ -39,7 +39,7 @@ export default function Nav() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
-      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={"sticky"} top={"0px"}>
+      <Box bg={useColorModeValue('gray.100', 'gray.900')} px={4} position={"sticky"} top={"0px"} zIndex={"1"}>
         
         <Flex h={16} alignItems={'center'} justifyContent={'end'} gap={"40px"}>
         {/* <Box>Ankit Sharma</Box> */}
