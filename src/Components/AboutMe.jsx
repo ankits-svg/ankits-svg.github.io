@@ -58,7 +58,7 @@ import { FaChessBoard } from 'react-icons/fa';
           <Stack spacing={4}>
             <Text
               textTransform={'uppercase'}
-              color={'blue.400'}
+              color={'blue.500'}
               fontWeight={600}
               fontSize={'sm'}
               bg={useColorModeValue('blue.50', 'blue.900')}
@@ -68,10 +68,10 @@ import { FaChessBoard } from 'react-icons/fa';
               About Me
             </Text>
             <Heading>Full Stack Web Developer</Heading>
-            <Text color={'red.500'} fontSize={'lg'}>
+            <Text fontStyle={"oblique"} color={'blue.500'} fontSize={'lg'}>
             Hi, My name is Ankit Sharma. I have completed my B.Tech from Pranveer Singh Institute Of Technology, Kanpur(U.P).
             </Text>
-            <Text color={'red.500'} fontSize={'lg'}>
+            <Text fontStyle={"oblique"} color={'blue.500'} fontSize={'lg'}>
               Currently, I have expertise in HTML, CSS, Bootstrap, JavaScript, Reactjs, React-Redux, Typescript and Cypress. Apart from programming, I enjoy.....</Text>
             <Stack
               spacing={4}

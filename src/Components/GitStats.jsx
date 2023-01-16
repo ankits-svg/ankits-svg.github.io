@@ -5,7 +5,7 @@ function GitStats() {
   return (
     // <div>GitStats</div>
     <Container>
-        <Heading size='lg' fontSize='50px' color="#F56565">
+        <Heading size='lg' fontSize='50px' color="blue.500">
         GitStats
     </Heading>
     <Box>

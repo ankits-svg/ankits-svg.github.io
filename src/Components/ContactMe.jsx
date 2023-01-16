@@ -1,3 +1,4 @@
+import { PhoneIcon } from '@chakra-ui/icons';
 import {
     Box,
     Button,
@@ -19,6 +20,7 @@ import {
   } from '@chakra-ui/react';
   import React from 'react';
   import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs';
+import { IoLocation } from 'react-icons/io5';
   import { MdEmail, MdOutlineEmail } from 'react-icons/md';
   
   const confetti = {
@@ -56,6 +58,8 @@ import {
           <Box>
             <VStack spacing={{ base: 4, md: 8, lg: 20 }}>
               <Heading
+              color={"blue.500"}
+              ml={"140px"}
                 fontSize={{
                   base: '4xl',
                   md: '5xl',
@@ -70,16 +74,18 @@ import {
                   align="center"
                   justify="space-around"
                   direction={{ base: 'row', md: 'column' }}>
+                  <Link href='ankits745@gmail.com'>
                   <Tooltip
-                    label={hasCopied ? 'Email Copied!' : 'Copy Email'}
+                    label={"Gorakhpur, Uttar Pradesh, India"}
                     closeOnClick={false}
-                    hasArrow>
+                    hasArrow
+                    >
                     <IconButton
                       aria-label="email"
                       variant="ghost"
                       size="lg"
                       fontSize="3xl"
-                      icon={<MdEmail />}
+                      icon={<IoLocation />}
                       _hover={{
                         bg: 'blue.500',
                         color: useColorModeValue('white', 'gray.700'),
@@ -88,9 +94,13 @@ import {
                       isRound
                     />
                   </Tooltip>
+                  </Link>
   
-                  <Link href="#">
-                    <IconButton
+                  <Link href="https://github.com/ankits-svg" target={"_blank"}>
+                    <Tooltip
+                    label={hasCopied ? 'Email Copied!' : 'ankits-svg'}
+                    >
+                      <IconButton
                       aria-label="github"
                       variant="ghost"
                       size="lg"
@@ -102,23 +112,30 @@ import {
                       }}
                       isRound
                     />
+                    </Tooltip>
+                    
                   </Link>
   
-                  <Link href="#">
-                    <IconButton
+                  
+                    <Tooltip
+                    label={hasCopied ? 'Email Copied!' : '8953453088'}
+                    >
+                      <IconButton
                       aria-label="twitter"
                       variant="ghost"
                       size="lg"
-                      icon={<BsTwitter size="28px" />}
+                      icon={<PhoneIcon size="28px" />}
                       _hover={{
                         bg: 'blue.500',
                         color: useColorModeValue('white', 'gray.700'),
                       }}
                       isRound
                     />
-                  </Link>
+                    </Tooltip>
+                    
+                  
   
-                  <Link href="#">
+                  <Link href="https://www.linkedin.com/in/ankit-sharma-b324a8107/" target={"_blank"}>
                     <IconButton
                       aria-label="linkedin"
                       variant="ghost"

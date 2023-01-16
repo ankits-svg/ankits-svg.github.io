@@ -19,8 +19,8 @@ function Projects() {
       pauseOnHover: true
     };
     return (
-    <Box >
-      <Heading size='lg' fontSize='50px' color="#F56565">
+    <Box boxShadow={"box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;"}>
+      <Heading size='lg' fontSize='50px' color="blue.500">
         Projects
     </Heading>
         <Slider {...settings}>
@@ -29,7 +29,7 @@ function Projects() {
                 <Box
                   maxW={'445px'}
                   w={'full'}
-                  bg={useColorModeValue('white', 'gray.900')}
+                  bg={useColorModeValue('white', 'blue.500')}
                   boxShadow={'2xl'}
                   rounded={'md'}
                   p={6}
@@ -51,7 +51,7 @@ function Projects() {
                   </Box>
                   <Stack>
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
@@ -59,7 +59,7 @@ function Projects() {
                       1
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
                       Friend's Fashion Adda
@@ -82,12 +82,12 @@ function Projects() {
                   <Stack ml={"22%"} direction='row' spacing={4}>
                         
                         <a href="https://friendsfashionadda.netlify.app/" target="_blank">
-                        <Button  colorScheme='teal' variant='solid'>
+                        <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://github.com/ankits-svg/-celestial-pie-5247" target="_blank">
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<ArrowForwardIcon />} bg='blue.500' color={"white"} variant='outline'>
                           Github
                         </Button>
                         </a>
@@ -99,7 +99,7 @@ function Projects() {
                 <Box
                   maxW={'445px'}
                   w={'full'}
-                  bg={useColorModeValue('white', 'gray.900')}
+                  bg={useColorModeValue('white', 'blue.500')}
                   boxShadow={'2xl'}
                   rounded={'md'}
                   p={6}
@@ -120,7 +120,7 @@ function Projects() {
                   </Box>
                   <Stack>
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
@@ -128,7 +128,7 @@ function Projects() {
                       2
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
                       Dermstore Website
@@ -140,12 +140,12 @@ function Projects() {
                   </Stack>
                   <Stack ml={"22%"} direction='row' spacing={4}>
                   <a href="https://stately-rabanadas-370a97.netlify.app/" target="_blank">
-                  <Button  colorScheme='teal' variant='solid'>
+                  <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://github.com/furqansup/curvy-plant-804" target="_blank">
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<ArrowForwardIcon />} bg='blue.500' color={"white"} variant='outline'>
                           Github
                         </Button>
                         </a>
@@ -156,7 +156,7 @@ function Projects() {
                 <Box
                   maxW={'445px'}
                   w={'full'}
-                  bg={useColorModeValue('white', 'gray.900')}
+                  bg={useColorModeValue('white', 'blue.500')}
                   boxShadow={'2xl'}
                   rounded={'md'}
                   p={6}
@@ -177,7 +177,7 @@ function Projects() {
                   </Box>
                   <Stack>
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
@@ -185,7 +185,7 @@ function Projects() {
                       3
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
                       Shop.com Website
@@ -197,12 +197,12 @@ function Projects() {
                   </Stack>
                   <Stack ml={"22%"} direction='row' spacing={4}>
                   <a href="https://reliable-cuchufli-7e83c6.netlify.app/" target="_blank">
-                  <Button  colorScheme='teal' variant='solid'>
+                  <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://github.com/ankushsin/shy-exchange-4248" target="_blank">
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<ArrowForwardIcon />} bg='blue.500' color={"white"} variant='outline'>
                           Github
                         </Button>
                         </a>
@@ -213,7 +213,7 @@ function Projects() {
                 <Box
                   maxW={'445px'}
                   w={'full'}
-                  bg={useColorModeValue('white', 'gray.900')}
+                  bg={useColorModeValue('white', 'blue.500')}
                   boxShadow={'2xl'}
                   rounded={'md'}
                   p={6}
@@ -234,7 +234,7 @@ function Projects() {
                   </Box>
                   <Stack>
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
@@ -242,7 +242,7 @@ function Projects() {
                       4
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
                       Modesens Website
@@ -254,12 +254,12 @@ function Projects() {
                   </Stack>
                   <Stack ml={"22%"} direction='row' spacing={4}>
                   <a href="https://teal-axolotl-dc6e0a.netlify.app/index.html" target="_blank">
-                  <Button  colorScheme='teal' variant='solid'>
+                  <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://github.com/ankits-svg/previous-sound-2568" target="_blank">
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<ArrowForwardIcon />} bg='blue.500' color={"white"} variant='outline'>
                           Github
                         </Button>
                         </a>
@@ -271,7 +271,7 @@ function Projects() {
                 <Box
                   maxW={'445px'}
                   w={'full'}
-                  bg={useColorModeValue('white', 'gray.900')}
+                  bg={useColorModeValue('white', 'blue.500')}
                   boxShadow={'2xl'}
                   rounded={'md'}
                   p={6}
@@ -292,7 +292,7 @@ function Projects() {
                   </Box>
                   <Stack>
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
@@ -300,7 +300,7 @@ function Projects() {
                       5
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
                       Nature Basket Website
@@ -313,12 +313,12 @@ function Projects() {
                   </Stack>
                   <Stack ml={"22%"} direction='row' spacing={4}>
                   <a href="https://remarkable-sunshine-naturebasketclone.netlify.app/index.html" target="_blank">
-                        <Button  colorScheme='teal' variant='solid'>
+                        <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://drive.google.com/file/d/13V3VxIGkMZJ7L6Nh6coQDUWRxwEBDHnA/view?usp=sharing" target="_blank">
-                        <Button rightIcon={<FaVideo />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<FaVideo />} bg='blue.500' color={"white"} variant='outline'>
                           Video
                         </Button>
                         </a>
@@ -348,20 +348,20 @@ function Projects() {
                       layout={'full'}
                     />
                   </Box>
-                  <Stack>
+                  <Stack >
                     <Text
-                      color={'green.500'}
+                      color={'blue.500'}
                       textTransform={'uppercase'}
                       fontWeight={800}
                       fontSize={'md'}
                       letterSpacing={1.1}>
-                      5
+                      6
                     </Text>
                     <Heading
-                      color={useColorModeValue('gray.700', 'white')}
+                      color={useColorModeValue('blue.500', 'white')}
                       fontSize={'2xl'}
                       fontFamily={'body'}>
-                      Boost your conversion rate
+                      J.Crew Website
                     </Heading>
                     <Text color={'gray.500'}>
                     J.Crew Group, Inc., is an American multi-brand, multi-channel, specialty retailer. The company offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear.
@@ -372,12 +372,12 @@ function Projects() {
                   </Stack>
                   <Stack ml={"22%"} direction='row' spacing={4}>
                   <a href="https://incandescent-mooncake-91ae01.netlify.app/" target="_blank">
-                  <Button  colorScheme='teal' variant='solid'>
+                  <Button  bg='blue.500' color={"white"} variant='solid'>
                           Netlify
                         </Button>
                         </a>
                         <a href="https://github.com/rahuljithu123/happy-notebook-3138" target="_blank">
-                        <Button rightIcon={<ArrowForwardIcon />} colorScheme='teal' variant='outline'>
+                        <Button rightIcon={<ArrowForwardIcon />} bg='blue.500' variant='outline' color={"white"}>
                           Github
                         </Button>
                         </a>
