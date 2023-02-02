@@ -19,6 +19,7 @@ import {
 import { DownloadIcon, EmailIcon, InfoIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FaBookOpen, FaHome, FaProjectDiagram } from 'react-icons/fa';
 import { MdOutlineBiotech, MdPermContactCalendar } from 'react-icons/md';
+import { transform } from 'framer-motion';
 
 const NavLink = ({ children }) => (
   <Link
@@ -34,22 +35,25 @@ const NavLink = ({ children }) => (
   </Link>
 );
 
+
+
 export default function Nav() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
   return (
     <>
       <Box bg={useColorModeValue('blue.100', 'blue.100')} px={4} position={"sticky"} top={"0px"} zIndex={"1"}>
-        
+          
         <Flex h={16} alignItems={'center'} justifyContent={'end'} gap={"40px"}>
         {/* <Box>Ankit Sharma</Box> */}
+        {/* <Box justifyContent={"start"}><Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<FaHome />} variant='solid'>Home</Button></Box> */}
           <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<FaHome />} variant='solid'>Home</Button>
-          <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<FaBookOpen />} variant='solid'>About</Button>
-          <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<MdOutlineBiotech />} variant='solid'>Tech Stack</Button>
+          <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<FaBookOpen />} variant='solid' >About</Button>
+          {/* <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<MdOutlineBiotech />} variant='solid'>Tech Stack</Button> */}
           <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<InfoIcon/>} variant='solid'>Skills</Button>
           <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<FaProjectDiagram />} variant='solid'>Projects</Button>
           <Button bg={"blue.100"} color={"black"} cursor={'pointer'} leftIcon={<MdPermContactCalendar/>} variant='solid'>Contacts</Button>
-          <Link href='https://drive.google.com/file/d/1M85yN5EJ6L-yrn1JrZu6gO9pk05lOQi-/view?usp=share_link' target={"_blank"} textDecorationLine={"none"}><Button bg={"blue.300"} color={"white"} cursor={'pointer'} leftIcon={<DownloadIcon />} variant='solid'>Resume</Button></Link>
+          <Link href='https://drive.google.com/file/d/1M85yN5EJ6L-yrn1JrZu6gO9pk05lOQi-/view?usp=share_link' target={"_blank"} textDecorationLine={"none"} download="Ankit_Sharma_Resume"><Button bg={"blue.300"} color={"white"} cursor={'pointer'} leftIcon={<DownloadIcon />} variant='solid' >Resume</Button></Link>
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
               <Button onClick={toggleColorMode}>

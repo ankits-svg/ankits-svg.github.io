@@ -24,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Navbar/>
+      
       <About/>
       <br />
       <AboutMe/>

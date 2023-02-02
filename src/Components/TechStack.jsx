@@ -7,7 +7,7 @@ function TechStack() {
 
    <Container>
     <Heading size='lg' fontSize='50px' color="blue.500">
-        Tech Stack
+        Skills
     </Heading>
      <Box display={"flex"} gap={"60px"} ml={"-250px"}>
        
