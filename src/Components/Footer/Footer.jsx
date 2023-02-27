@@ -7,9 +7,10 @@ import {
     useColorModeValue,
     VisuallyHidden,
   } from '@chakra-ui/react';
-  import { FaGithub, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from 'react-icons/fa';
+  import { FaGithub, FaHome, FaInstagram, FaLinkedin, FaMailchimp, FaTwitter, FaYoutube } from 'react-icons/fa';
   import { ReactNode } from 'react';
 import { PhoneIcon } from '@chakra-ui/icons';
+import './Footer.css'
   
   const Logo = (props) => {
     return (
@@ -60,8 +61,9 @@ import { PhoneIcon } from '@chakra-ui/icons';
   export default function Footer() {
     return (
       <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
+        bg={useColorModeValue('#FFE715', 'gray.900')}
+        color={useColorModeValue('#101920', 'gray.200')}>
+          
         <Container
           as={Stack}
           maxW={'6xl'}
@@ -71,8 +73,10 @@ import { PhoneIcon } from '@chakra-ui/icons';
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
           <Logo />
-          <Text>© 2023 Ankit Sharma. All rights reserved | 8953453088 | ankits745@gmail.com</Text>
-          <Stack direction={'row'} spacing={6}>
+          <Text>© 2023 Ankit Sharma. All rights reserved | <PhoneIcon /> 8953453088 | ankits745@gmail.com</Text>
+          <Stack direction={'row'} spacing={6} mt={"10px"}>
+            <div className="foot">
+            <FaHome/>
             <SocialButton label={'GitHub'} href={'https://github.com/ankits-svg'} target="_blank" >
             <FaGithub   cursor="pointer" />
             </SocialButton>
@@ -85,6 +89,7 @@ import { PhoneIcon } from '@chakra-ui/icons';
               <PhoneIcon /> 
               {/* <h4>8953453088</h4> */}
             </SocialButton>
+            </div>
           </Stack>
         </Container>
       </Box>

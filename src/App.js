@@ -1,61 +1,47 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
-import About from './Components/About';
+import Navbar from './Components/Navbar/Navbar';
+// import About from './Components/About1/About';
 import AboutMe from './Components/AboutMe';
 import TechStack from './Components/TechStack';
 
-import Projects from './Components/Projects';
+import {Projects} from './Components/Projects/Projects';
 
-import ContactMe from './Components/ContactMe';
-import Footer from './Components/Footer';
-import GitStats from './Components/GitStats';
-import Tech4 from './Components/tech4';
-import Tech5 from './Components/Tech5';
-import Tech6 from './Components/Tech6';
-import Tech7 from './Components/Tech7';
-import Tech8 from './Components/Tech8';
-import Tech9 from './Components/Tech9';
-import { Heading, Stack } from '@chakra-ui/react';
+import ContactMe from './Components/Contact/ContactMe';
+import Footer from './Components/Footer/Footer';
+
+import {  Stack } from '@chakra-ui/react';
+
+
+import { Techstacks } from './Components/Tech/Techstacks';
+import { GithubCalender } from './Components/GitCalender/GithubCalender';
+import About from './Components/About/About';
+// import { Introduction } from './Components/Intro/Introduction';
+
 
 
 
 function App() {
   return (
-    <div className="App">
-      <Navbar/>
+    <div className='App'>
+    <Navbar/>
+      
       
       <About/>
-      <br />
       <AboutMe/>
-      <br />
-      <TechStack/>
-      {/* <Tech5/> */}
+      
       <Stack/>
-      <br />
-      <br />
-      <Heading size='lg' fontSize='50px' color={"blue.500"}>
-      Portfolio
-      </Heading>
-      <Tech4/>
-      <Tech5/>
-      <Tech6/>
-      <Tech7/>
-      <Tech8/>
-      <Tech9/>
-      <br />
-      {/* <Tech2/> */}
-      {/* <Projects/> */}
-      {/* <Skills/> */}
-      {/* <Projects/> */}
-      <br />
-      <br />
-      <GitStats/>
-      <br />
+      
+      
+      <Techstacks/>
+      <Projects/>
+      <GithubCalender/>
+    
       <ContactMe/>
-      {/* <br /> */}
+     
       <Footer/>
-    </div>
+      
+      </div>
   );
 }
 

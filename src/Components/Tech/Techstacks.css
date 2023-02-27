@@ -1,0 +1,83 @@
+.main {
+  margin-top: 4em;
+  width: 70%;
+  margin: auto;
+}
+.techsection {
+  width: 100%;
+  text-align: center;
+  background-color: var(--clr-bg);
+  height: 50vh;
+  /* max-height: 400px; */
+}
+
+.techsection > div {
+  width: 11%;
+  height: 16vh;
+  max-height: 140px;
+  box-shadow: var(--shadow);
+  z-index: 1;
+  border-radius: 20px;
+  margin: 2.5%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease 0s;
+  border: 2px solid var(--clr-primary);
+}
+.techsection > div:hover {
+  /* background-color: #FFE715; */
+  color: #101920;
+  overflow: hidden;
+  transform: scale(1.08);
+  box-shadow: rgba(0, 0, 0, 0.36) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  border: 1px solid #FFE715;
+}
+.different{
+  text-align:center;
+  font-size: 30px;
+  color:#FFE715;
+}
+.techsection > div > svg {
+  /* height: 50%;
+  width: 50%; */
+  font-size: 8vh;
+  color: #FFE715;
+}
+.techsection > div > svg:hover {
+  /* height: 50%;
+  width: 50%; */
+  font-size: 8vh;
+  /* color: #101920; */
+}
+/*
+EE4E34 burnt orange
+FCEDDA peach
+*/
+.techsection > div > h5 {
+  position: relative;
+  color: #FFE715;
+  top: 8px;
+  background-color: transparent;
+}
+.techsection > div > h5:hover {
+  position: relative;
+  /* color: #101920; */
+  top: 8px;
+  background-color: transparent;
+}
+
+@media (max-width: 600px) {
+  .techsection {
+    height: 120vh;
+  }
+  .techsection > div {
+    width: 40%;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    height: 18vh;
+  }
+}
