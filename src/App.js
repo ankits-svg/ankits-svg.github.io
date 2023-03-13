@@ -16,6 +16,7 @@ import {  Stack } from '@chakra-ui/react';
 import { Techstacks } from './Components/Tech/Techstacks';
 import { GithubCalender } from './Components/GitCalender/GithubCalender';
 import About from './Components/About/About';
+import {Nav} from './Components/Navbar/Nav.jsx';
 // import { Introduction } from './Components/Intro/Introduction';
 
 
@@ -24,7 +25,8 @@ import About from './Components/About/About';
 function App() {
   return (
     <div className='App'>
-    <Navbar/>
+      <Nav/>
+    {/* <Navbar/> */}
       
       
       <About/>

@@ -13,7 +13,7 @@ import {
   
   export default function About() {
     return (
-      <Container maxW={'5xl'}>
+      <Container maxW={'5xl'}  id="about" class="about section">
         <Stack
           textAlign={'center'}
           align={'center'}

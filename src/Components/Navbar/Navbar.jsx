@@ -16,6 +16,7 @@ import {
   Stack,
   useColorMode,
   Center,
+  SimpleGrid,
 } from '@chakra-ui/react';
 import { DownloadIcon, EmailIcon, InfoIcon, MoonIcon, SunIcon } from '@chakra-ui/icons';
 import { FaBookOpen, FaHome, FaProjectDiagram } from 'react-icons/fa';
@@ -53,7 +54,8 @@ export default function Nav() {
   return (
     <div className="nav-menu">
       <Box   bg={useColorModeValue('#FFE715', 'blue.100')} px={4} position={"fixed"} zIndex={"1"} top={"0px"} w={"100%"}>
-          
+
+        
         <Flex h={16} alignItems={'center'} justifyContent={'end'} gap={"40px"}>
         
           <a href="#home"
@@ -129,6 +131,7 @@ export default function Nav() {
             </Stack>
           </Flex>
         </Flex>
+        
       </Box>
     </div>
   );
