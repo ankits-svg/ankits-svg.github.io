@@ -704,3 +704,14 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+    
+github-calendar {
+        width: 80vw;
+        display: block;
+        margin: 0 auto;
+    }
+    .git__content-title{
+        text-align: center;
+        font-size: 40px;
+    }
+    

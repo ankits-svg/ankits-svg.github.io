@@ -36,3 +36,26 @@ const headerLogoConatiner = document.querySelector('.header__logo-container')
 headerLogoConatiner.addEventListener('click', () => {
   location.href = 'index.html'
 })
+
+function sendMail(){
+  var params = {
+    name:document.getElementById("name").value,
+    email:document.getElementById("email").value,
+    message:document.getElementById("message").value
+  }
+
+
+const serviceId='service_uzy0vb5'
+const templateId='template_slbp10r'
+
+emailjs.send(serviceId,templateId,params).then((res) => {
+  document.getElementById("name").value = '';
+  document.getElementById("email").value = '';
+  document.getElementById("message").value = '';
+  console.log(res);
+  alert("your message sent succesfully!")
+}).catch((err) => {console.log(err)});
+
+}
+
+//<form action="#" class="contact__form"></form>
