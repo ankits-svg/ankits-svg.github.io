@@ -715,3 +715,51 @@ github-calendar {
         font-size: 40px;
     }
     
+    .wrapper{
+        text-align: center;
+        display: inline-flex;
+        gap: 10px;
+    }
+    .wrapper .static-txt{
+        color: #333;
+        font-size: 60px;
+        font-weight:400;
+    }
+    .wrapper .dynamic-txt{
+        margin-left: 15px;
+        height:90px;
+
+        line-height: 80px;
+        overflow: hidden;
+
+    }
+
+    .dynamic-txts li{
+        color: #333;
+        list-style: none;
+        font-size: 60px;
+        font-weight:500;
+        position: relative;
+        top: 0;
+        animation: typing 6s steps(4) infinite;
+    }
+    .dynamic-txts li span{
+        position: relative;
+        /* animation: slide 1.5s steps(10) infinite; */
+    }
+    .dynamic-txts li span:after{
+        content:"";
+        position: absolute;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #fff;
+        border-left: 2px solid #333;
+        
+    }
+
+    @keyframes slide{
+        100%{
+            top: -360px;
+        }
+    }
