@@ -1,12 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Ankit Portfolio, creating my portfolio, now updating the html page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Ankit Sharma-Full Stack Web Developer</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/fw19_0178.jpg"
+              alt="AnkitSharma Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ankit Sharma</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li>
+            <li class="header__link-wrapper">
+                <a href="https://drive.google.com/file/d/1M85yN5EJ6L-yrn1JrZu6gO9pk05lOQi-/view?usp=share_link" class="header__link" target="_blank" download="Ankit_Sharma_Resume"> Resume </a>
+              </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home-hero">
+      <div class="home-hero__content">
+        <h1 class="heading-primary">Hi, My name is <span style="color: #333333;">Ankit Sharma</span></h1>
+        <div class="home-hero__info">
+          <p class="text-primary">
+            An inquisitive and highly motivated full-stack web
+          developer with specialization in MERN stack. Has
+          relevant hands-on experience in building multiple
+          websites from scratch. Seeking to pursue a career in
+          a challenging environment to hone industry skills.
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="https://github.com/ankits-svg" target="_blank" class="btn btn--bg">Github</a>
+          <a href="https://drive.google.com/file/d/1M85yN5EJ6L-yrn1JrZu6gO9pk05lOQi-/view?usp=share_link" target="_blank" class="btn btn--bg">Resume</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="https://www.linkedin.com/in/ankit-sharma-b324a8107/" target='_blank' class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="https://github.com/ankits-svg" class="home-hero__social-icon-link" target='_blank'>
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link" target='_blank'>
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link" target='_blank'>
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+          target='_blank'
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section>
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main">About Me</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey! It's
+                <strong>Ankit Sharma</strong>
+                and I'm a <strong> Full Stack Web Developer specialised in MERN stack</strong> located in
+                Gorakhpur, (Uttar Pradesh). I've done
+                <strong> 1300+ hrs of</strong>
+                coding while learning from Masai School, I am problem solver who loves to play with
+                <strong>Data Structure and Algorithms.</strong>
+              </p>
+              <p class="about__content-details-para">
+                I'm a bit of a digital product junky. Academically I am a Mechanical Engineer but being trendy in my nature ttake me to software development field. If any suggestions feel free to 
+                <strong>contact</strong> me here.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+            <div class="skills">
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Chakra UI</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Node</div>
+              <div class="skills__skill">Express</div>
+              <div class="skills__skill">MongoDb</div>
+              <div class="skills__skill">Vercel</div>
+              <!-- <div class="skills__skill">IOS</div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/107456969/229345775-58ff7a33-a2b9-442b-9ca1-b086b1d9cbf0.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Shop Vibes</h3>
+              <p class="projects__row-content-desc">
+                ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
+              </p>
+              <div>
+                <a
+                href="https://shopvibes.vercel.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >See this Live</a
+              >
+              <a
+                href="https://github.com/madhurn29/courageous-wound-8341"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >View Code</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/103572350/229416971-402708f6-07bc-4705-9ea6-f79c32649f8f.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">MegaDeals</h3>
+              <p class="projects__row-content-desc">
+                Megadeals is an Indian e-commerce website founded in 2010. It offers a wide range of products across various categories such as electronics, fashion and more.The platform also offers seller services, logistics, and payment solutions.
+              </p>
+              <div>
+                <a
+                href="https://megadeal.vercel.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >See this Live</a
+              >
+              <a
+                href="https://github.com/avnishsingh0/illustrious-health-8601"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >View Code</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/103572350/211359968-cb35eda4-80c2-48c9-9340-420d512640ce.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Friend's Fashion Adda</h3>
+              <p class="projects__row-content-desc">
+                Friend's Fashion Adda is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparel based on dazzling and upbeat designs that resonate with the millennials.
+              </p>
+              <div>
+                <a
+                href="https://github.com/ankits-svg/-celestial-pie-5247"
+               
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+              href="https://friendsfashionadda.netlify.app/"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >See this live</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <!-- <span class="heading-sec__sub heading-sec__sub--lt">
+            Let's start a project together
+          </span> -->
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <span style="color:#333333"><b>Phone:</b></span> (+91-8953453088)
+          </span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <span style="color:#333333"><b>Email:</b></span> ankits745@gmail.com
+          </span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <span style="color:#333333"><b>Address:</b></span>200Q, Near Vatsalya Public School, Manas Vihar Colony, Padari Bazar, Gorakhpur (Uttar Pradesh)
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/ankit-sharma-b324a8107/">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/ankits-svg">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+               <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">Ankit Sharma</h4>
+            <p class="main-footer__short-desc">
+              An Euthusiastic Full Stack Web Developer
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/ankit-sharma-b324a8107/"
+            >Ankit Sharma</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
 </html>
