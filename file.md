@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ankit Sharma-Full Stack Web Developer</title>
-    <meta name="description" content="Portfolio Template for Developer" />
-
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="./assets/png/aletter.jpg" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-WYDpIomCFxizsV7jKRYl+m/CVggwtRzG2ZK7OZq3c3T7Tf1CQGdq8w6P3o6Uf3bZ9/BvPwhWncAFszkY1kKj5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link
-  rel="stylesheet"
-  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
-/>
-  </head>
-  <body>
-
-    <header id="nav-menu">
+<header class="header" id="nav-menu">
       <div class="header__content">
         <div class="header__logo-container">
           <div class="header__logo-img-cont">
@@ -39,24 +14,21 @@
           <ul class="header__links">
             <li class="header__link-wrapper">
               <!-- Element linked to Home section : class="nav-link home" -->
-              <a href="./index.html" class="nav-link home"> Home </a>
+              <a href="./index.html" class="header__link"> Home </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="nav-link about">About </a>
+              <a href="./index.html#about" class="header__link">About </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#about" class="nav-link skills">Skills </a>
-            </li>
-            <li class="header__link-wrapper">
-              <a href="./index.html#projects" class="nav-link projects">
+              <a href="./index.html#projects" class="header__link">
                 Projects
               </a>
             </li>
             <li class="header__link-wrapper">
-              <a href="./index.html#contact" class="nav-link contact"> Contact </a>
+              <a href="./index.html#contact" class="header__link"> Contact </a>
             </li>
             <li class="header__link-wrapper">
-                <a href="./Ankit-Sharma-Resume.pdf" class="nav-link resume" id="resume-link-1" target="_blank" download="Ankit-Sharma-Resume"> Resume </a>
+                <a href="./Ankit-Sharma-Resume.pdf" class="header__link" target="_blank" download="Ankit-Sharma-Resume"> Resume </a>
               </li>
           </ul>
           <div class="header__main-ham-menu-cont">
@@ -96,9 +68,9 @@
       </div>
     </header>
 
-    <section id="home">
+    <section class="home-hero" id="home">
       <div class="home-hero__content">
-        <h1 id="user-detail-name">Hi, My name is <span style="color: #333333;">Ankit Sharma</span></h1>
+        <h1 class="heading-primary">Hi, My name is <span style="color: #333333;">Ankit Sharma</span></h1>
         
         <!-- <div class="wrapper">
             <div class="static-txt">I'm a,</div>
@@ -109,7 +81,7 @@
             </ul>
         </div> -->
         
-        <div id="user-detail-intro">
+        <div class="home-hero__info">
           <p class="text-primary">
             An Inquisitive and highly motivated <b style="color:#333333">full-stack web
               developer</b> with specialization in<b style="color:#333333"> MERN stack.</b> Has
@@ -119,11 +91,8 @@
           </p>
         </div>
         <div class="home-hero__cta">
-          <a href="https://github.com/ankits-svg" target="_blank" id="contact-github">Github</a>
-          <a href="https://github.com/ankits-svg" target="_blank" id="contact-phone">Phone number</a>
-          <a href="https://github.com/ankits-svg" target="_blank" id="contact-email">Email address</a>
-          <img class="home-img" src="#" alt="">
-          <a href="./Ankit-Sharma-Resume.pdf" target="_blank" id="resume-link-2" download="Ankit-Sharma-Resume">Resume</a>
+          <a href="https://github.com/ankits-svg" target="_blank" class="btn btn--bg">Github</a>
+          <a href="./Ankit-Sharma-Resume.pdf" target="_blank" class="btn btn--bg" download="Ankit-Sharma-Resume">Resume</a>
         </div>
       </div>
       <div class="home-hero__socials">
@@ -182,10 +151,10 @@
       </div>
     </section>
     
-    <section id="about" class="about section">
+    <section id="about" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span id="user-detail-intro">About Me</span>
+          <span class="heading-sec__main">About Me</span>
           <span class="heading-sec__sub">
             As a MERN stack developer, I spend most of my days in front of a computer screen, crafting code like a wizard casting spells...except instead of magic potions, I'm using JavaScript, React, Node, and MongoDB to bring web applications to life.
           </span>
@@ -212,37 +181,30 @@
               </p>
               
             </div>
-
+<!-- Navbar : id="nav-menu"
+Home section : id="home"
+About section : id="about" class="about section"
+Skills section : id="skills"
+Projects section : id="projects"
+Contact section : id="contact" -->
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
               >Contact</a
             >
           </div>
-          <div id="skills">
+          <div class="about__content-skills" id="skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt="">
-              <h3 class="skills-card-name">html</h3></div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3 class="skills-card-name">CSS</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3 class="skills-card-name"></h3>JavaScript</div>
-              <!-- <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>React</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>Chakra UI</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>GIT</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>Netlify</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>Node</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>Express</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>MongoDb</div>
-              <div class="skills-card">
-                <img class="skills-card-img" src="#" alt=""><h3></h3>Vercel</div> -->
+              <div class="skills__skill">HTML</div>
+              <div class="skills__skill">CSS</div>
+              <div class="skills__skill">JavaScript</div>
+              <div class="skills__skill">React</div>
+              <div class="skills__skill">Chakra UI</div>
+              <div class="skills__skill">GIT</div>
+              <div class="skills__skill">Netlify</div>
+              <div class="skills__skill">Node</div>
+              <div class="skills__skill">Express</div>
+              <div class="skills__skill">MongoDb</div>
+              <div class="skills__skill">Vercel</div>
               <!-- <div class="skills__skill">IOS</div> -->
             </div>
           </div>
@@ -250,8 +212,19 @@
       </div>
     </section>
 
+    <!-- <section class="tech-stack">
+        <h2>Tech Stack &amp; Tools</h2>
+        <ul>
+          <li><i class="fab fa-html5"></i> HTML</li>
+          <li><i class="fab fa-css3-alt"></i> CSS</li>
+          <li><i class="fab fa-react"></i> React</li>
+          <li><i class="fab fa-node"></i> Node.js</li>
+          <li><i class="fab fa-node-js"></i> Express</li>
+          <li><i class="fas fa-database"></i> MongoDB</li>
+        </ul>
+      </section> -->
 
-    <section id="projects">
+    <section id="projects" class="projects sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-bg">
           <span class="heading-sec__main">Projects</span>
@@ -271,29 +244,28 @@
                 loading="lazy"
               />
             </div>
-            <div class="project-card">
-              <h3 class="project-title">Shop Vibes</h3>
-              <p class="project-description">
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Shop Vibes</h3>
+              <p class="projects__row-content-desc">
                 ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
               </p>
-              <div class="project-tech-stack"></div>
               <div>
                 <a
                 href="https://shopvibes.vercel.app/"
-                class="project-deployed-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >See this Live</a
               >
               <a
                 href="https://github.com/madhurn29/courageous-wound-8341"
-                class="project-github-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Code</a
               >
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
                 src="https://user-images.githubusercontent.com/103572350/229416971-402708f6-07bc-4705-9ea6-f79c32649f8f.png"
@@ -303,28 +275,27 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="project-title">MegaDeals</h3>
-              <p class="project-description">
+              <h3 class="projects__row-content-title">MegaDeals</h3>
+              <p class="projects__row-content-desc">
                 Megadeals is an Indian e-commerce website founded in 2010. It offers a wide range of products across various categories such as electronics, fashion and more.The platform also offers seller services, logistics, and payment solutions.
               </p>
-              <div class="project-tech-stack"></div>
               <div>
                 <a
                 href="https://megadeal.vercel.app/"
-                class="project-deployed-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >See this Live</a
               >
               <a
                 href="https://github.com/avnishsingh0/illustrious-health-8601"
-                class="project-github-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Code</a
               >
               </div>
             </div>
           </div>
-          <div class="project-card">
+          <div class="projects__row">
             <div class="projects__row-img-cont">
               <img
                 src="https://user-images.githubusercontent.com/103572350/211359968-cb35eda4-80c2-48c9-9340-420d512640ce.png"
@@ -334,22 +305,21 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="project-title">Friend's Fashion Adda</h3>
-              <p class="project-description">
+              <h3 class="projects__row-content-title">Friend's Fashion Adda</h3>
+              <p class="projects__row-content-desc">
                 Friend's Fashion Adda is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparel based on dazzling and upbeat designs that resonate with the millennials.
               </p>
               <div>
-                <div class="project-tech-stack"></div>
                 <a
                 href="https://github.com/ankits-svg/-celestial-pie-5247"
                
-                class="project-github-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >GitHub</a
               >
               <a
               href="https://friendsfashionadda.netlify.app/"
-              class="project-deployed-link"
+                class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >See this live</a>
               </div>
@@ -365,7 +335,7 @@
 
     
 
-    <section id="contact">
+    <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
@@ -504,21 +474,3 @@
       <img src="#" alt="error" id="github-top-langs">
       <img src="#" alt="error" id="github-stats-card">
     </div>
-
-    
-
-    <script src="./index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/github-calendar-element@1.0.0/lib/main.js" ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("cOE32Vukn6naV1oz7");
-   })();
-</script>
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  </body>
-</html>
-
-
