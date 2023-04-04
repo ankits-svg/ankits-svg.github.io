@@ -23,12 +23,7 @@
   </head>
   <body>
 
-    <!-- Navbar : id="nav-menu"
-Home section : id="home"
-About section : id="about" class="about section"
-Skills section : id="skills"
-Projects section : id="projects"
-Contact section : id="contact" -->
+    
 
     <header class="header" id="nav-menu">
       <div class="header__content">
@@ -45,6 +40,7 @@ Contact section : id="contact" -->
         <div class="header__main">
           <ul class="header__links">
             <li class="header__link-wrapper">
+              <!-- Element linked to Home section : class="nav-link home" -->
               <a href="./index.html" class="header__link"> Home </a>
             </li>
             <li class="header__link-wrapper">
@@ -212,12 +208,17 @@ Contact section : id="contact" -->
               </p>
               
             </div>
-
+<!-- Navbar : id="nav-menu"
+Home section : id="home"
+About section : id="about" class="about section"
+Skills section : id="skills"
+Projects section : id="projects"
+Contact section : id="contact" -->
             <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
               >Contact</a
             >
           </div>
-          <div class="about__content-skills">
+          <div class="about__content-skills" id="skills">
             <h3 class="about__content-title">My Skills</h3>
             <div class="skills">
               <div class="skills__skill">HTML</div>
@@ -355,7 +356,7 @@ Contact section : id="contact" -->
       </div>
     </section>
     
-    <h3 class="git__content-title">GitHub Calendar</h3>
+    <h3 class="react-activity-calendar">GitHub Calendar</h3>
     <github-calendar user-name="ankits-svg" tooltips="true" >Loading Fallback...</github-calendar>
     <github-alike-calendar username="ankits-svg" responsive="true"></github-alike-calendar>
 
