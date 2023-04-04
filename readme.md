@@ -6,5 +6,9 @@ Element linked to Projects section : class="nav-link projects"
 Element linked to Contact section : class="nav-link contact"
 Element linked to Resume : class="nav-link resume"
 
-calenders
-For the GitHub calendar: class="react-activity-calendar" (the class is automatically included if you're using the react-github-calendar npm package)
+calenders------Done
+Stats
+The GitHub statistics images must have the following IDs:
+GitHub streak stats : id="github-streak-stats" [Link to refer : https://github-readme-streak-stats.herokuapp.com/demo/]
+GitHub top languages : id="github-top-langs" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
+GitHub stats card : id="github-stats-card" [Link to refer : https://github.com/anuraghazra/github-readme-stats]
