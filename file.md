@@ -333,7 +333,11 @@ Contact section : id="contact" -->
     <github-calendar user-name="ankits-svg" tooltips="true" >Loading Fallback...</github-calendar>
     <github-alike-calendar username="ankits-svg" responsive="true"></github-alike-calendar>
 
-    
+    <div>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ankits-svg&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=#a084ca" alt="error" id="github-streak-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=ankits-svg&show_icons=true&title_color=#4c3575&text_color=#4c3575&icon_color=#4c3575&bg_color=red&border_radius=10&border_color=#4c3575" alt="error" id="github-stats-card">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankits-svg&title_color=4C3575&icon_color=#4c3575&text_color=#4c3575&bg_color=#a084ca&show_icons=true" alt="error"  id="github-top-langs">
+</div>
 
     <section id="contact" class="contact sec-pad dynamicBg">
       <div class="main-container">
