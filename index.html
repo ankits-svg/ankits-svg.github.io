@@ -24,25 +24,58 @@
   <body>
 
     <header id="nav-menu">
-      <a href="./index.html" class="nav-link home"> Home </a>
-            
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/fw19_0178.jpg"
+              alt="AnkitSharma Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Ankit Sharma</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <li class="header__link-wrapper">
+              <!-- Element linked to Home section : class="nav-link home" -->
+              <a href="./index.html" class="nav-link home"> Home </a>
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#about" class="nav-link about">About </a>
-            
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#about" class="nav-link skills">Skills </a>
-            
-            
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#projects" class="nav-link projects">
                 Projects
               </a>
-            
-            
+            </li>
+            <li class="header__link-wrapper">
               <a href="./index.html#contact" class="nav-link contact"> Contact </a>
-            
-            
+            </li>
+            <li class="header__link-wrapper">
                 <!-- <a > Resume </a> -->
-                <a href="./Ankit-Sharma-Resume.pdf" class="nav-link resume" id="resume-link-1" target="_blank" download="Ankit-Sharma-Resume">
-                  <button  id="resume-button-1">Resume</button>
+                <a href="./Ankit-Sharma-Resume.pdf" class="nav-link resume" id="resume-link-2" target="_blank" download="Ankit-Sharma-Resume">
+                  <button  id="resume-button-2">Resume</button>
                 </a>
+              </li>
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
+          </div>
+        </div>
+      </div>
       <div class="header__sm-menu">
         <div class="header__sm-menu-content">
           <ul class="header__sm-menu-links">
@@ -91,8 +124,8 @@
           <a href="https://github.com/ankits-svg" target="_blank" id="contact-phone">Phone number</a>
           <a href="https://github.com/ankits-svg" target="_blank" id="contact-email">Email address</a>
           <img class="home-img" src="#" alt="">
-          <a href="./Ankit-Sharma-Resume.pdf" target="_blank" id="resume-link-2" download="Ankit-Sharma-Resume">
-            <button href="" id="resume-button-2">Resume</button>
+          <a href="./Ankit-Sharma-Resume.pdf" target="_blank" id="resume-link-1" download="Ankit-Sharma-Resume">
+            <button href="" id="resume-button-1">Resume</button>
           </a>
         </div>
       </div>
@@ -159,114 +192,173 @@
         
         </div>
         <div id="skills">
-          <div class="skills-card">
-            <img class="skills-card-img" src="#" alt="">
-          <h3 class="skills-card-name">html</h3></div>
-          <div class="skills-card">
-            <img class="skills-card-img" src="#" alt=""><h3></h3 class="skills-card-name">CSS</div>
-          <div class="skills-card">
-            <img class="skills-card-img" src="#" alt=""><h3 class="skills-card-name"></h3>JavaScript</div>
+          <h3 class="about__content-title">My Skills</h3>
+          <div class="skills">
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt="">
+            <h3 class="skills-card-name">html</h3></div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3 class="skills-card-name">CSS</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3 class="skills-card-name"></h3>JavaScript</div>
+            <!-- <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>React</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>Chakra UI</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>GIT</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>Netlify</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>Node</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>Express</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>MongoDb</div>
+            <div class="skills-card">
+              <img class="skills-card-img" src="#" alt=""><h3></h3>Vercel</div> -->
+            <!-- <div class="skills__skill">IOS</div> -->
+          </div>
         </div>
       
     </section>
 
 
     <section id="projects">
-      <div class="project-card">
-        <img src="#" alt="">
-        <h3 class="project-title">Shop Vibes</h3>
-        
-        <p class="project-description">
-          ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
-        </p>
-        <div class="project-tech-stack"></div>
-        <div>
-          
-        <a
-          href="https://github.com/madhurn29/courageous-wound-8341"
-          class="project-github-link"
-          target="_blank"
-          >View Code</a
-        >
-        <a
-          href="https://shopvibes.vercel.app/"
-          class="project-deployed-link"
-          target="_blank"
-          >See this Live</a
-        >
-        </div>
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/107456969/229345775-58ff7a33-a2b9-442b-9ca1-b086b1d9cbf0.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            
+            <div class="project-card">
+              <img src="#" alt="">
+              <h3 class="project-title">Shop Vibes</h3>
+              
+              <p class="project-description">
+                ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
+              </p>
+              <div class="project-tech-stack"></div>
+              <div>
+                <a
+                href="https://shopvibes.vercel.app/"
+                class="project-deployed-link"
+                target="_blank"
+                >See this Live</a
+              >
+              <a
+                href="https://github.com/madhurn29/courageous-wound-8341"
+                class="project-github-link"
+                target="_blank"
+                >View Code</a
+              >
+              </div>
+            </div>
+            <div class="project-card">
+              
+              <img src="#" alt="">
+              <h3 class="project-title">Shop Vibes</h3>
+              <p class="project-description">
+                ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
+              </p>
+              <div class="project-tech-stack"></div>
+              <div>
+                <a
+                href="https://shopvibes.vercel.app/"
+                class="project-deployed-link"
+                target="_blank"
+                >See this Live</a
+              >
+              <a
+                href="https://github.com/madhurn29/courageous-wound-8341"
+                class="project-github-link"
+                target="_blank"
+                >View Code</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/103572350/229416971-402708f6-07bc-4705-9ea6-f79c32649f8f.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              
+              <img src="#" alt="">
+              <h3 class="project-title">MegaDeals</h3>
+              <p class="project-description">
+                Megadeals is an Indian e-commerce website founded in 2010. It offers a wide range of products across various categories such as electronics, fashion and more.The platform also offers seller services, logistics, and payment solutions.
+              </p>
+              <div class="project-tech-stack"></div>
+              <div>
+                <a
+                href="https://megadeal.vercel.app/"
+                class="project-deployed-link"
+                target="_blank"
+                >See this Live</a
+              >
+              <a
+                href="https://github.com/avnishsingh0/illustrious-health-8601"
+                class="project-github-link"
+                target="_blank"
+                >View Code</a
+              >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="projects__row-img-cont">
+              <img
+                src="https://user-images.githubusercontent.com/103572350/211359968-cb35eda4-80c2-48c9-9340-420d512640ce.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              
+              <img src="#" alt="">
+              <h3 class="project-title">Friend's Fashion Adda</h3>
+              <p class="project-description">
+                Friend's Fashion Adda is the fashion e-commerce startup that stands out from the rest. It offers a trendy collection of apparel based on dazzling and upbeat designs that resonate with the millennials.
+              </p>
+              <div>
+                <div class="project-tech-stack"></div>
+                <a
+                href="https://github.com/ankits-svg/-celestial-pie-5247"
+               
+                class="project-github-link"
+                target="_blank"
+                >GitHub</a
+              >
+              <a
+              href="https://friendsfashionadda.netlify.app/"
+              class="project-deployed-link"
+                target="_blank"
+                >See this live</a>
+              </div>
+            </div>
+          </div>
       </div>
-      <div class="project-card">
-        <img src="#" alt="">
-        <h3 class="project-title">Shop Vibes</h3>
-        
-        <p class="project-description">
-          ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
-        </p>
-        <div class="project-tech-stack"></div>
-        <div>
-          
-        <a
-          href="https://github.com/madhurn29/courageous-wound-8341"
-          class="project-github-link"
-          target="_blank"
-          >View Code</a
-        >
-        <a
-          href="https://shopvibes.vercel.app/"
-          class="project-deployed-link"
-          target="_blank"
-          >See this Live</a
-        >
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="#" alt="">
-        <h3 class="project-title">Shop Vibes</h3>
-        
-        <p class="project-description">
-          ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
-        </p>
-        <div class="project-tech-stack"></div>
-        <div>
-          
-        <a
-          href="https://github.com/madhurn29/courageous-wound-8341"
-          class="project-github-link"
-          target="_blank"
-          >View Code</a
-        >
-        <a
-          href="https://shopvibes.vercel.app/"
-          class="project-deployed-link"
-          target="_blank"
-          >See this Live</a
-        >
-        </div>
-      </div>
-      <div class="project-card">
-        <img src="#" alt="">
-        <h3 class="project-title">Shop Vibes</h3>
-        
-        <p class="project-description">
-          ShopVibes is a shopping and lifestyle brand which is the ultimate destination for the latest fashion styles that are handpicked and are available at the best price that one can find anywhere and also you can do business with shopvibes.com
-        </p>
-        <div class="project-tech-stack"></div>
-        <div>
-          
-        <a
-          href="https://github.com/madhurn29/courageous-wound-8341"
-          class="project-github-link"
-          target="_blank"
-          >View Code</a
-        >
-        <a
-          href="https://shopvibes.vercel.app/"
-          class="project-deployed-link"
-          target="_blank"
-          >See this Live</a
-        >
-        </div>
       </div>
     </section>
     
