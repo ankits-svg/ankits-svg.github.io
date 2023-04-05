@@ -765,3 +765,8 @@ github-calendar {
             top: -360px;
         }
     }
+
+    .stats{
+      margin-left: 30%;
+      margin: auto;
+    }
