@@ -770,8 +770,14 @@ github-calendar {
             top: -360px;
         }
     }
-
+.stats{
+  /* border: 1px solid red; */
+  width: 40%;
+  margin: auto;
+}
     .stats img{
-      margin-left: 30%;
+      display: block;
+      /* margin-left: 30%; */
+      padding: 20px;
       margin: auto;
     }
