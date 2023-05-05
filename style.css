@@ -772,12 +772,15 @@ github-calendar {
     }
 .stats{
   /* border: 1px solid red; */
-  width: 40%;
+  width: auto;
   margin: auto;
 }
     .stats img{
       display: block;
+      width: 30%;
       /* margin-left: 30%; */
       padding: 20px;
       margin: auto;
+      @media only screen and (max-width: 37.5em) {
+        width : 70%; }
     }

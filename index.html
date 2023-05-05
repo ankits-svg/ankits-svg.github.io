@@ -20,6 +20,7 @@
   rel="stylesheet"
   href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
 />
+<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
 <header class="header" id="nav-menu">
@@ -360,11 +361,14 @@ Contact section : id="contact" -->
 <h3 class="react-activity-calendar">GitHub Calendar</h3>
 <github-calendar user-name="ankits-svg" tooltips="true" >Loading Fallback...</github-calendar>
 <github-alike-calendar username="ankits-svg" responsive="true"></github-alike-calendar>
+<!-- <div class="calendar"></div> -->
+<!-- stats section -->
 
+<!-- end of stats -->
 <div class="stats">
-  <img width="60%" src="https://github-readme-streak-stats.herokuapp.com/?user=ankits-svg&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=#a084ca" alt="error" id="github-streak-stats">
-  <img width="50%" src="https://github-readme-stats.vercel.app/api?username=ankits-svg&show_icons=true&title_color=#4c3575&text_color=#4c3575&icon_color=#4c3575&bg_color=red&border_radius=10&border_color=#4c3575" alt="error" id="github-stats-card">
-  <img  src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankits-svg&title_color=4C3575&icon_color=#4c3575&text_color=#4c3575&bg_color=#a084ca&show_icons=true" alt="error"  id="github-top-langs">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ankits-svg&theme=sea&hide_border=true&border_radius=10&date_format=j%20M%5B%20Y%5D&background=#a084ca" alt="error" id="github-streak-stats">
+  <img src="https://github-readme-stats.vercel.app/api?username=ankits-svg&show_icons=true&title_color=#4c3575&text_color=#4c3575&icon_color=#4c3575&bg_color=red&border_radius=10&border_color=#4c3575" alt="error" id="github-stats-card">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ankits-svg&title_color=4C3575&icon_color=#4c3575&text_color=#4c3575&bg_color=#a084ca&show_icons=true" alt="error"  id="github-top-langs">
 </div>
 
 <section id="contact" class="contact sec-pad dynamicBg">
@@ -502,21 +506,14 @@ Contact section : id="contact" -->
   emailjs.init("cOE32Vukn6naV1oz7");
 })();
 </script>
-<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+<script>
+  GitHubCalendar(".calendar", "ankits-svg");
+
+  // or enable responsive functionality:
+  GitHubCalendar(".calendar", "ankits-svg", { responsive: true });
+
+</script>
 </body>
 </html>
 
-<!-- <div>
-  <div id="nav-menu">Navbar</div>
-  <div id="home">Home section</div>
-  <div id="about" class="about section">About section</div>
-  <div id="skills">Skills section</div>
-  <div id="projects">Projects section</div>
-  <div id="contact">Contact section</div>
-</div>
-<!-- Stats -->
-<!-- <div>
-  <img src="#" alt="error" id="github-streak-stats">
-  <img src="#" alt="error" id="github-top-langs">
-  <img src="#" alt="error" id="github-stats-card">
-</div> --> -->
