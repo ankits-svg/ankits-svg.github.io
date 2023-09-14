@@ -62,6 +62,26 @@ button {
 textarea {
   resize: none; }
 
+  /* .heading-primary {
+    font-size: 24px;
+  } */
+  
+  #typewriter {
+    border-right: 2px solid #333333; /* Create a cursor effect */
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflow text */
+    animation: typewriter 3s steps(30) forwards; /* Typewriter animation */
+  }
+  
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
 .heading-primary {
   font-size: 6rem;
   text-transform: uppercase;
@@ -784,3 +804,7 @@ github-calendar {
       @media only screen and (max-width: 37.5em) {
         width : 70%; }
     }
+
+
+    /*  */
+   

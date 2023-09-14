@@ -7,6 +7,45 @@ const headerHamMenuCloseBtn = document.querySelector(
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
+/*
+download and redirect logic
+*/
+
+// var hov = document.getElementById('hov');
+// var hob = document.getElementById('hob');
+
+// hov.addEventListener('mouseenter', function() {
+//   hov.style.opacity = '0';
+//   hov.style.transform = 'translateY(20px)';
+//   hob.classList.add('active');
+// });
+
+// hob.addEventListener('mouseleave', function() {
+//   hov.style.opacity = '1';
+//   hov.style.transform = 'translateY(0)';
+//   hob.classList.remove('active');
+// });
+function downloadAndRedirect() {
+  // Perform the download
+  var downloadLink = document.createElement('a');
+  downloadLink.href = 'Ankit-Sharma-Resume.pdf'; // Replace with your file URL
+  downloadLink.download = 'Ankit-Sharma-Resume.pdf'; // Replace with your desired filename
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+
+  // Redirect to another link in a new tab
+  window.open('https://drive.google.com/file/d/1M85yN5EJ6L-yrn1JrZu6gO9pk05lOQi-/view?usp=sharing', '_blank'); // Replace with your desired redirect URL
+}
+
+// Typewriter effect
+function startTypewriter() {
+  var typewriterElement = document.getElementById('typewriter');
+  typewriterElement.style.animation = 'typewriter 3s steps(30) forwards'; // Start the typewriter animation
+}
+
+setTimeout(startTypewriter, 1000);
+
 hamMenuBtn.addEventListener('click', () => {
   if (smallMenu.classList.contains('header__sm-menu--active')) {
     smallMenu.classList.remove('header__sm-menu--active')

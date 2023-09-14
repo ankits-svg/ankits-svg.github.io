@@ -54,8 +54,16 @@
           <a href="./index.html#contact" class="header__link"> Contact </a>
         </li>
         <li class="header__link-wrapper">
-            <a href="./Ankit-Sharma-Resume.pdf" class="header__link" target="_blank" download="Ankit-Sharma-Resume"> Resume </a>
-          </li>
+          <a 
+          class="header__link"
+          href="javascript:void(0);"
+          id="downloadAndRedirectLink"
+          onclick="downloadAndRedirect();"
+            >
+            Resume
+          </a>
+        </li>
+        
       </ul>
       <div class="header__main-ham-menu-cont">
         <img
@@ -91,8 +99,15 @@
         </li>
 
         <li class="header__sm-menu-link">
-          <a href="./Ankit-Sharma-Resume.pdf" target="_blank" download="Ankit-Sharma-Resume"> Resume </a>
+          <a 
+          href="javascript:void(0);"
+          id="downloadAndRedirectLink"
+          onclick="downloadAndRedirect();">
+           Resume 
+          </a>
+          
         </li>
+        
       </ul>
     </div>
   </div>
@@ -113,16 +128,22 @@
     
     <div class="home-hero__info">
       <p class="text-primary">
-        An Inquisitive and highly motivated <b style="color:#333333">full-stack web
-          developer</b> with specialization in<b style="color:#333333"> MERN stack.</b> Has
-      relevant hands-on experience in building multiple
-      websites from scratch. Seeking to pursue a career in
-      a challenging environment to hone industry skills.
+        Highly proficient <b style="color:#333333">Full Stack Web Developer,</b> adept in<b style="color:#333333"> MERN stack,</b> with a proven record of crafting innovative
+
+        solo and collaborative projects. Renowned problem-
+        solving skills and a collaborative mindset, complemented by the ability to harness <b style="color:#333333">Generative AI</b>, exemplify
+        adaptability in swiftly mastering new tech stacks.
       </p>
     </div>
     <div class="home-hero__cta">
       <a href="https://github.com/ankits-svg" target="_blank" class="btn btn--bg">Github</a>
-      <a href="./Ankit-Sharma-Resume.pdf" target="_blank" class="btn btn--bg" download="Ankit-Sharma-Resume">Resume</a>
+      <a 
+      href="javascript:void(0);"
+      id="downloadAndRedirectLink"
+      onclick="downloadAndRedirect();"
+      class="btn btn--bg"
+      >Resume
+    </a>
     </div>
   </div>
   <div class="home-hero__socials">
@@ -227,7 +248,7 @@ Contact section : id="contact" -->
           <div class="skills__skill">HTML <i class="fa-brands fa-html5"></i></div>
           <div class="skills__skill">CSS <i class="fa-brands fa-css3-alt"></i></div>
           <div class="skills__skill">JavaScript <i class="fa-brands fa-square-js"></i></div>
-          <div class="skills__skill">React <i class="fa-brands fa-react"></i></div>
+          <div class="skills__skill">React js <i class="fa-brands fa-react"></i></div>
           <div class="skills__skill">Chakra UI <i class="fa-solid fa-dharmachakra"></i></div>
           <div class="skills__skill">GIT <i class="fa-brands fa-github"></i></div>
           <div class="skills__skill">Netlify <i class="fa-solid fa-globe"></i></div>
@@ -235,6 +256,10 @@ Contact section : id="contact" -->
           <div class="skills__skill">Express <i class="fa-solid fa-e"></i></div>
           <div class="skills__skill">MongoDb <i class="fa-solid fa-m"></i></div>
           <div class="skills__skill">Vercel <i class="fa-solid fa-v"></i></div>
+          <div class="skills__skill">Django <i class="fa-solid fa-d"></i></div>
+          <div class="skills__skill">Angular js <i class="fa-solid fa-a"></i></div>
+          <div class="skills__skill">MySQL <i class="fa-solid fa-m"></i></div>
+          <div class="skills__skill">Tailwind css <i class="fa-solid fa-t"></i></div>
           <!-- <div class="skills__skill">IOS</div> -->
         </div>
       </div>
@@ -287,6 +312,40 @@ Contact section : id="contact" -->
     </h2>
 
     <div class="projects__content">
+      <!-- 1st Project -->
+      <div class="projects__row">
+        <div class="projects__row-img-cont">
+          <img
+            src="https://github-production-user-asset-6210df.s3.amazonaws.com/103572350/266101045-d6d2a28b-84ff-4a5c-abb5-60e13fc15bb5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20230913%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230913T141838Z&X-Amz-Expires=300&X-Amz-Signature=64732e9a4fea6753e986b06ff0d1d0fe2ac2d054cb85ea351e2c67e843002f92&X-Amz-SignedHeaders=host&actor_id=103572350&key_id=0&repo_id=497514745"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+          />
+        </div>
+        <div class="projects__row-content">
+          <h3 class="projects__row-content-title">Quirky Cocoon</h3>
+          <p class="projects__row-content-desc">
+            Welcome to Quirky Cocoon, an innovative educational management platform that redefines the learning experience for students, instructors, and administrators in educational institutions. This readme will guide you through the project's goals, key features, technology stack, milestones, and deliverables.
+          </p>
+        
+          
+          <div class="live">
+            <a
+            href="https://vimeo.com/861333924/13b6d9a50b?share=copy"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >See this Live</a
+          >
+          <a
+            href="https://github.com/ankits-svg/QuirkyCocoon"
+            class="btn btn--med btn--theme dynamicBgClr"
+            target="_blank"
+            >View Code</a
+          >
+          </div>
+        </div>
+      </div>
+      <!-- 2nd project -->
       <div class="projects__row">
         <div class="projects__row-img-cont">
           <img
