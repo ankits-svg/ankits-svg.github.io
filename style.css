@@ -690,7 +690,8 @@ textarea {
 
 .skills {
   display: flex;
-  flex-wrap: wrap; }
+  flex-wrap: wrap; 
+}
   .skills__skill {
     padding: 1rem 2rem;
     margin-bottom: 1.5rem;
@@ -699,7 +700,14 @@ textarea {
     background: rgba(153, 153, 153, 0.2);
     border-radius: 5px;
     font-weight: 600;
-    color: #777; }
+    color: #777; 
+    cursor: pointer;
+  }
+  .skills__skill:hover{
+    font-size: 1.6rem;
+    background-color: #0062b9;
+    color: white;
+  }
 
 .mouse {
   width: 25px;
@@ -807,4 +815,5 @@ github-calendar {
 
 
     /*  */
-   
+
+    
