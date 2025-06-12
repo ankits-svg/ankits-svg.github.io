@@ -28,14 +28,14 @@ download and redirect logic
 function downloadAndRedirect() {
   // Perform the download
   var downloadLink = document.createElement('a');
-  downloadLink.href = 'Ankit-Sharma-RESUME.pdf'; // Replace with your file URL
-  downloadLink.download = 'Ankit-Sharma-RESUME.pdf'; // Replace with your desired filename
+  downloadLink.href = 'Ankit_Sharma_Resume.pdf'; // Replace with your file URL
+  downloadLink.download = 'Ankit_Sharma_Resume.pdf'; // Replace with your desired filename
   document.body.appendChild(downloadLink);
   downloadLink.click();
   document.body.removeChild(downloadLink);
 
   // Redirect to another link in a new tab
-  window.open('https://drive.google.com/file/d/11xDnX2C5cGp5s4yxBs7Kog4brcmTl1gR/view?usp=sharing', '_blank'); // Replace with your desired redirect URL
+  window.open('https://drive.google.com/file/d/1Alg03VkCQ8VfXwcH49cw54mN0pFFVpF0/view?usp=sharing', '_blank'); // Replace with your desired redirect URL
 }
 
 // Typewriter effect
