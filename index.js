@@ -7,24 +7,7 @@ const headerHamMenuCloseBtn = document.querySelector(
 )
 const headerSmallMenuLinks = document.querySelectorAll('.header__sm-menu-link')
 
-/*
-download and redirect logic
-*/
 
-// var hov = document.getElementById('hov');
-// var hob = document.getElementById('hob');
-
-// hov.addEventListener('mouseenter', function() {
-//   hov.style.opacity = '0';
-//   hov.style.transform = 'translateY(20px)';
-//   hob.classList.add('active');
-// });
-
-// hob.addEventListener('mouseleave', function() {
-//   hov.style.opacity = '1';
-//   hov.style.transform = 'translateY(0)';
-//   hob.classList.remove('active');
-// });
 function downloadAndRedirect() {
   // Perform the download
   var downloadLink = document.createElement('a');
