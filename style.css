@@ -206,6 +206,11 @@ textarea {
 .home-hero {
   color: #fff;
   background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(../../assets/svg/common-bg.svg);
+ /* background: linear-gradient(135deg, rgba(255, 0, 150, 0.85), rgba(0, 206, 255, 0.85)),
+            url(../../assets/svg/common-bg.svg); */
+
+
+
   background-position: center;
   height: 100vh;
   min-height: 80rem;
@@ -816,4 +821,143 @@ github-calendar {
 
     /*  */
     
-    
+    .main-footer__icon {
+  font-size: 28px;
+  margin-right: 12px;
+  transition: transform 0.3s;
+}
+
+/* Individual icon colors */
+.main-footer__icon.linkedin { color: #0077B5; }
+.main-footer__icon.github { color: #181717; }
+.main-footer__icon.twitter { color: #1DA1F2; }
+.main-footer__icon.youtube { color: #FF0000; }
+.main-footer__icon.instagram { color: #E4405F; }
+
+/* Hover effect */
+.main-footer__icon:hover {
+  transform: scale(1.2);
+}
+
+/* Fade-in and slide-up animation */
+.animate-slide-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 0.8s ease forwards;
+}
+
+.animate-fade {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.animate-fade-delay {
+  opacity: 0;
+  animation: fadeIn 0.8s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Slide up keyframes */
+@keyframes slideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade-in keyframes */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Tech badges styling */
+.tech-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #fff;
+  margin-right: 8px;
+  margin-bottom: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Brand colors */
+.tech-badge.angular { background-color: #DD0031; }  /* Angular red */
+.tech-badge.django { background-color: #092E20; }   /* Django dark green */
+.tech-badge.sql { background-color: #00758F; }      /* SQL Server blue */
+.tech-badge.genai { background-color: #6C63FF; }    /* Generative AI purple */
+.tech-badge.react { background-color: #61DAFB; color: #000; }   /* React blue */
+.tech-badge.node { background-color: #339933; }                 /* Node green */
+.tech-badge.mongo { background-color: #47A248; }                /* MongoDB green */
+.tech-badge.express { background-color: #000000; }
+.tech-badge.jsonserver {
+  background-color: #FF6F61; /* coral/orange shade */
+  color: #fff;
+}
+
+/* Hover effect */
+.tech-badge:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+.tech-badge:hover {
+  background: #61dafb;
+  transform: scale(1.1);
+  color: #fff;
+}
+
+/* Button hover animation */
+.btn-animate {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-animate:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.projects__row-img-cont {
+  overflow: hidden;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px; /* adjust based on your layout */
+  margin: 20px 0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.projects__row-img-cont:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.25);
+}
+
+.projects__row-img {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  transition: transform 0.4s ease;
+}
+
+/* Optional: fade-in animation when it scrolls into view */
+.animate-img {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: imgSlideUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes imgSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
