@@ -959,5 +959,24 @@ github-calendar {
 }
 
 
+/* Typewriter effect */
+.typewriter-text {
+  display: inline-block;
+  border-right: 2px solid #333; /* Cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 3s steps(14) 1 forwards, blinkCursor 0.7s step-end infinite;
+}
+
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blinkCursor {
+  50% { border-color: transparent; }
+}
+
+
 
 
